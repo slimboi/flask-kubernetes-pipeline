@@ -27,8 +27,8 @@ jobs:
           docker push slimboi/flask-kubernetes-pipeline:${{ env.SHORT_SHA }}
       - name: Configure Git Author
         run: |
-          git config --local user.email "ola@ofagbule.cloud"
-          git config --local user.name "ofagbule"
+          git config --local user.email "ola.fagbule@gmail.com"
+          git config --local user.name "slimboi"
       - name: Update Helm Chart with new image tag
         run: |
           sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./flask-kubernetes-pipeline-time-printer/values.yaml
