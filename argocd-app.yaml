@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: flask-kubernetes-pipeline
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL : "https://github.com/slimboi/flask-kubernetes-pipeline"
+    targetRevision: HEAD
+    path: flask-kubernetes-pipeline-time-printer
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
