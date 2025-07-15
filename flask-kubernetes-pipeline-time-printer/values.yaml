@@ -1,5 +1,5 @@
 image:
-  repository: thedevopsdude/complete-devops-project
+  repository: slimboi/flask-kubernetes-pipeline
   tag: 2ae72ee
   pullPolicy: IfNotPresent
 service:

@@ -25,14 +25,14 @@ jobs:
       - name: Push to Dockerhub
         run: |
           docker push slimboi/flask-kubernetes-pipeline:${{ env.SHORT_SHA }}
-      - name: Congure Git Author
+      - name: Configure Git Author
         run: |
           git config --local user.email "ola@ofagbule.cloud"
           git config --local user.name "ofagbule"
-      # - name: Update Helm Chart with new image tag
-      #   run: |
-      #     sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./flask-kubernetes-pipeline-time-printer/values.yaml
-      #     git add ./flask-kubernetes-pipeline-time-printer/values.yaml
-      #     git commit -m "Updated image tag to ${{ env.SHORT_SHA }}"
-      #     git push
+      - name: Update Helm Chart with new image tag
+        run: |
+          sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./flask-kubernetes-pipeline-time-printer/values.yaml
+          git add ./flask-kubernetes-pipeline-time-printer/values.yaml
+          git commit -m "Updated image tag to ${{ env.SHORT_SHA }}"
+          git push
       

@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "complete-devops-project-time-printer.fullname" . }}
+  name: {{ include "flask-kubernetes-pipeline-time-printer.fullname" . }}
   labels:
-    {{- include "complete-devops-project-time-printer.labels" . | nindent 4 }}
+    {{- include "flask-kubernetes-pipeline-time-printer.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "complete-devops-project-time-printer.fullname" . }}
+    name: {{ include "flask-kubernetes-pipeline-time-printer.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
