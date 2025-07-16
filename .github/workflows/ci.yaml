@@ -31,8 +31,8 @@ jobs:
           git config --local user.name "slimboi"
       - name: Update Helm Chart with new image tag
         run: |
-          sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./flask-kubernetes-pipeline-time-printer/values.yaml
-          git add ./flask-kubernetes-pipeline-time-printer/values.yaml
+          sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./helm-chart/values.yaml
+          git add ./helm-chart/values.yaml
           git commit -m "Updated image tag to ${{ env.SHORT_SHA }}"
           git push
       

@@ -5,6 +5,9 @@ resource "helm_release" "argocd" {
   namespace        = "argocd"
   create_namespace = "true"
 
+  # Explicitly depend on the cluster being ready
+  depends_on = [minikube_cluster.minikube_docker]
+
   values = [
     <<EOF
         server:
