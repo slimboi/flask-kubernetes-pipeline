@@ -1,6 +1,6 @@
 image:
   repository: slimboi/flask-kubernetes-pipeline
-  tag: ee53c63
+  tag: dc3638e
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
