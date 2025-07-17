@@ -13,7 +13,7 @@ provider "minikube" {
 
 resource "minikube_cluster" "minikube_docker" {
   driver       = "docker"
-  cluster_name = "complete-devops-project"
+  cluster_name = "flask-k8s-project"
   addons = [
     "default-storageclass",
     "storage-provisioner"
