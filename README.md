@@ -2,9 +2,12 @@
 
 A production-ready GitOps DevOps pipeline demonstrating end-to-end automation with Flask microservices, Kubernetes orchestration, Argo CD GitOps, and Infrastructure as Code using modern DevOps practices.
 
-![CI](https://github.com/slimboi/flask-kubernetes-pipeline/actions/workflows/ci.yml/badge.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Made with ❤️](https://img.shields.io/badge/made%20with-Flask-blue)
+[![flask-kubernetes-pipeline](https://github.com/slimboi/flask-kubernetes-pipeline/actions/workflows/ci.yaml/badge.svg)](https://github.com/slimboi/flask-kubernetes-pipeline/actions/workflows/ci.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made with Flask](https://img.shields.io/badge/made%20with-Flask-blue)](https://flask.palletsprojects.com/)
+[![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/slimboi/flask-kubernetes-pipeline)
+[![GitOps](https://img.shields.io/badge/GitOps-ArgoCD-orange.svg)](https://argoproj.github.io/cd/)
 
 ## 🎯 Project Overview
 
