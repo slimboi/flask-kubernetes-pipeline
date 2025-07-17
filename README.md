@@ -425,7 +425,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**Contact** - [your.email@example.com](mailto:your.email@example.com)
+**Contact** - [ola.fagbule@gmail.com](mailto:your.email@example.com)
 
 Project Link: [https://github.com/slimboi/flask-kubernetes-pipeline](https://github.com/slimboi/flask-kubernetes-pipeline)
 
