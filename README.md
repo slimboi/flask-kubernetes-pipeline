@@ -127,6 +127,9 @@ argocd repo add https://github.com/slimboi/flask-kubernetes-pipeline.git \
 
 ### 5. Deploy Application via ArgoCD
 ```bash
+# Go back to root directory of project
+cd ..
+
 # Apply ArgoCD application configuration
 kubectl apply -f argocd-app.yaml
 
